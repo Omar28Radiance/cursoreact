@@ -24,7 +24,6 @@ function App() {
     
     html2canvas(document.querySelector("#meme")).then(canvas=>{
       var img    = canvas.toDataURL("image/png");
-
       var link = document.createElement('a');
       link.download = 'meme.png';
       link.href = img;
